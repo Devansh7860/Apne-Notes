@@ -1,0 +1,222 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: #e3e9f0;
+    color: #343a40;
+}
+nav{
+    color: white;
+    display: flex;
+    background-color: #3d5f81;
+    align-items: center;
+    height: 40px;
+    padding: 10px;
+}
+nav .header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: fit-content; */
+    margin: 0 4px;
+    /* width: 400px; */
+}
+nav #icon1{
+    font-size: 35px;
+    margin-right: 20px;
+    margin-left: 20px;
+    color: rgb(91, 159, 219);
+}
+nav .searchArea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+
+    margin-right: 30px;
+}
+
+nav .searchArea input{
+    height: 33px;
+    border-radius: 13px;
+    margin-right: 10px;
+    width: 180px;
+}
+nav h1{
+    color: rgb(212, 218, 235);
+    font-family: cursive;
+    font-size: 25px;
+}
+nav .searchArea input::placeholder{
+    
+    font-size: 14px;
+    padding-left: 12px;
+}
+nav .searchArea #icon2{
+    border-radius: 8px;
+    font-size: 20px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+nav .searchArea #icon2:hover{
+    color: rgb(195, 214, 231);
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 30px;
+}
+.newNote{
+    display: flex;
+    margin: 0 18px;
+    align-items: center;
+    justify-content: center;
+}
+.newNote #notesBtn {
+    cursor: pointer;
+    padding: 5px 15px;
+    margin: 0px 6px;
+    border-radius: 10px;
+    color: whitesmoke;
+    border: 1px solid #33d4d6;
+    background-color: #33d4d6;
+    font-size: 16px;
+    transition-duration: 0.5s;
+}
+.deleteAll #deleteAllBtn{
+    cursor: pointer;
+    padding: 5px 15px;
+    margin: 0px 6px;
+    border-radius: 10px;
+    color: whitesmoke;
+    border: 1px solid #33d4d6;
+    background-color: rgb(219, 85, 61);
+    font-size: 16px;
+    transition-duration: 0.5s;
+}
+.deleteAll #icon5{
+    font-size: 23px;
+    color: #343a40;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.newNote #icon3{
+    font-size: 25px;
+    color: #343a40;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+
+.main{
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.notes{
+    display: inline-block;
+    resize: none;
+    height: 150px;
+    width: 300px;
+    padding: 15px;
+    padding-right: 28px;
+    border: none;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    position: relative;
+    transition-duration: 0.5s;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+.notesDiv{
+    margin: 20px;
+    margin-top: 35px;
+}
+.notes:hover{
+    transform: scale(1.05);
+    box-shadow: rgba(60, 64, 67, 0.3) 5px 5px 5px 3px, rgba(60, 64, 67, 0.3) 2px 2px 2px 1px;
+}
+.notes:focus{
+    transform: scale(1.1);
+    box-shadow: rgba(60, 64, 67, 0.3) 5px 5px 5px 3px, rgba(60, 64, 67, 0.3) 2px 2px 2px 1px;
+}
+.icon4:hover{
+    background-color: white;
+    color: red;
+    transform: scale(1.2);
+}
+
+.icon4{
+    transition-duration: 0.3s;
+    border: 1px solid red;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: red;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 5px;
+    right: 3px;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width : 560px){
+    
+    nav .searchArea{
+        position: absolute;
+        display: block;
+        top: 90px;
+        width: 100%;
+        text-align: center;
+    }
+    nav .searchArea #icon2{
+        color: black;
+        display: inline-block;
+    }
+    nav .searchArea input{
+        display: inline-block;
+        margin-right: 3px;
+        margin-left: -17px;
+        width: 210px;
+    }
+    section{
+        display: block;
+    }
+    section .newNote{
+        margin: 30px;
+        margin-top: 50px;
+    }
+    section .deleteAll{
+        margin-top: -10px;
+    }
+    section .newNote #notesBtn{
+        font-size: 17px;
+        width: 210px;
+        padding: 6px;
+    }
+   section .deleteAll #deleteAllBtn{
+       font-size: 17px;
+       width: 210px;
+       padding: 6px;
+   }
+   .notes{
+       width: 245px;
+       height: 130px;
+   }
+   .notesDiv{
+       margin-top: 30px;
+       margin-bottom: 5px;
+   }
+}
+
+
+
+

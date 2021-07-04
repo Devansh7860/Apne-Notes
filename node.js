@@ -10,6 +10,7 @@ let addNote = () => {
   let newNote = document.createElement("textarea");
   newNote.className = "notes";
   newNote.setAttribute("placeholder", "Add a note here");
+  newNote.setAttribute("spellcheck" , "false")
   newNoteValue = newNote.value
 
   let deleteIcon = document.createElement("i");

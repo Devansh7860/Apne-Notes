@@ -188,7 +188,7 @@ section{
         display: inline-block;
         margin-right: 3px;
         margin-left: -17px;
-        width: 260px;
+        width: 290px;
     }
     section{
         display: block;
@@ -202,12 +202,12 @@ section{
     }
     section .newNote #notesBtn{
         font-size: 17px;
-        width: 260px;
+        width: 290px;
         padding: 6px;
     }
    section .deleteAll #deleteAllBtn{
        font-size: 17px;
-       width: 260px;
+       width: 290px;
        padding: 6px;
    }
    .notes{

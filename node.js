@@ -94,17 +94,6 @@ let displayNotes = () => {
 window.addEventListener("load", displayNotes);
 
 
-// DELETING ALL DATA IN LOCALSTORAGE AND INDIRECTLY CALLING DISPLAYNOTES()
-let deleteAllBtn = document.getElementById("deleteAllBtn");
-deleteAllBtn.addEventListener("click", () => {
-  for (i = 0; i < localDataArr.length; i++) {
-    localDataArr.splice(i, 1);
-  }
-  localStorage.clear();
-  
-  window.location.reload();
-});
-
 // SEARCH 
 let search = document.getElementById('search')
 
@@ -122,6 +111,19 @@ let search = document.getElementById('search')
         }
   }         
 search.addEventListener('input' , findData)
+
+// DELETING ALL DATA IN LOCALSTORAGE AND INDIRECTLY CALLING DISPLAYNOTES()
+let deleteAllBtn = document.getElementById("deleteAllBtn");
+deleteAllBtn.addEventListener("click", () => {
+  for (i = 0; i < localDataArr.length; i++) {
+    localDataArr.splice(i, 1);
+  }
+  localStorage.clear();
+  
+  window.location.reload();
+});
+
+
 
 
               

@@ -102,7 +102,7 @@ let search = document.getElementById('search')
       let notesDiv = document.getElementsByClassName('notesDiv')
       let n = Array.from(notesDiv)
       for ( i = 0; i < n.length; i++){
-          if (n[i].firstElementChild.value.includes(searchValue)){
+          if (n[i].firstElementChild.value.toLowerCase().includes(searchValue)){
             n[i].style.display = "inline-block"
           }
           else{
